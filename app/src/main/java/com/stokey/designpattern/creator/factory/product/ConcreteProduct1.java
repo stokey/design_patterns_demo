@@ -1,4 +1,4 @@
-package com.stokey.designpattern.creator.factory;
+package com.stokey.designpattern.creator.factory.product;
 
 /**
  * Created by tiangen on 2017/8/8.

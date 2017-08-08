@@ -1,9 +1,8 @@
-package com.stokey.designpattern.creator.factory;
+package com.stokey.designpattern.creator.factory.product;
 
 /**
- * Created by tiangen on 2017/8/8.
+ * Created by stokey on 2017/8/8.
  */
-
 /**
  * 抽象产品类
  */
@@ -14,3 +13,4 @@ public abstract class Product {
 
     public abstract void method2();
 }
+

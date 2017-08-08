@@ -4,6 +4,8 @@ package com.stokey.designpattern.creator.factory;
  * Created by tiangen on 2017/8/8.
  */
 
+import com.stokey.designpattern.creator.factory.product.Product;
+
 /**
  * 具体工厂类
  */

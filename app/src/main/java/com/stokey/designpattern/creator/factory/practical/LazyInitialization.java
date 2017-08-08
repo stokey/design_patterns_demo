@@ -1,8 +1,8 @@
 package com.stokey.designpattern.creator.factory.practical;
 
-import com.stokey.designpattern.creator.factory.ConcreteProduct1;
-import com.stokey.designpattern.creator.factory.ConcreteProduct2;
-import com.stokey.designpattern.creator.factory.Product;
+import com.stokey.designpattern.creator.factory.product.Product;
+import com.stokey.designpattern.creator.factory.product.ConcreteProduct1;
+import com.stokey.designpattern.creator.factory.product.ConcreteProduct2;
 
 import java.util.HashMap;
 import java.util.Map;
