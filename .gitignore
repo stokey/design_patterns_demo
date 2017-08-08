@@ -49,8 +49,3 @@ google-services.json
 freeline.py
 freeline/
 freeline_project_description.json
-app/libs/
-app/src/main/java/com/stokey/designpattern/behavior/
-app/src/main/java/com/stokey/designpattern/mixture/
-app/src/main/java/com/stokey/designpattern/struct/
-app/src/main/res/drawable/
