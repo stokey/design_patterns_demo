@@ -26,9 +26,12 @@ public class Singleton {
      */
     static class LazyNotThreadSafe {
         private static LazyNotThreadSafe INSTANCE;
-        private LazyNotThreadSafe(){}
-        public static LazyNotThreadSafe getInstance(){
-            if(INSTANCE == null){
+
+        private LazyNotThreadSafe() {
+        }
+
+        public static LazyNotThreadSafe getInstance() {
+            if (INSTANCE == null) {
                 INSTANCE = new LazyNotThreadSafe();
             }
             return INSTANCE;
@@ -40,10 +43,12 @@ public class Singleton {
      */
     static class LazyThreadSafeSynchronized {
         private static LazyThreadSafeSynchronized INSTANCE;
-        private LazyThreadSafeSynchronized(){}
 
-        public static synchronized LazyThreadSafeSynchronized getInstance(){
-            if (INSTANCE == null){
+        private LazyThreadSafeSynchronized() {
+        }
+
+        public static synchronized LazyThreadSafeSynchronized getInstance() {
+            if (INSTANCE == null) {
                 INSTANCE = new LazyThreadSafeSynchronized();
             }
             return INSTANCE;
@@ -55,12 +60,14 @@ public class Singleton {
      */
     static class LazyThreadSafeDoubleCheck {
         private static volatile LazyThreadSafeDoubleCheck INSTANCE;
-        private LazyThreadSafeDoubleCheck(){}
 
-        public static LazyThreadSafeDoubleCheck getInstance(){
-            if (INSTANCE == null){
-                synchronized (LazyThreadSafeDoubleCheck.class){
-                    if (INSTANCE == null){
+        private LazyThreadSafeDoubleCheck() {
+        }
+
+        public static LazyThreadSafeDoubleCheck getInstance() {
+            if (INSTANCE == null) {
+                synchronized (LazyThreadSafeDoubleCheck.class) {
+                    if (INSTANCE == null) {
                         INSTANCE = new LazyThreadSafeDoubleCheck();
                     }
                 }
@@ -77,17 +84,23 @@ public class Singleton {
             private static LazyThreadSafeStaticInnerClass INSTANCE = new LazyThreadSafeStaticInnerClass();
         }
 
-        private LazyThreadSafeStaticInnerClass(){}
+        private LazyThreadSafeStaticInnerClass() {
+        }
 
-        public static LazyThreadSafeStaticInnerClass getIntance(){return Holder.INSTANCE;}
+        public static LazyThreadSafeStaticInnerClass getIntance() {
+            return Holder.INSTANCE;
+        }
     }
 
     /**
      * 枚举
      */
-    static enum EnumSingleton{
+    static enum EnumSingleton {
         INSTANCE;
-        public static EnumSingleton getInstance(){return INSTANCE;}
+
+        public static EnumSingleton getInstance() {
+            return INSTANCE;
+        }
     }
 }
 
