@@ -34,9 +34,11 @@ package com.stokey.designpattern.struct.brigde;
  * Bridge VS Decorator
  *
  * 异同点：
+ *
  * 相同点：
  *  1、都是可以类继承的替代方案——继承具有强侵入性（父类改变时会影响所有子类）
  *  2、都可以对类进行扩展和改装
+ *
  * 不同点：
  *  1、装饰者模式侧重对现有类的扩展和改装，桥梁模式侧重将抽象与实现解耦（继承--> 耦合（持有抽象角色持有实现角色））
  *  2、Decorator继承自Component，Abstraction持有Implementor引用
